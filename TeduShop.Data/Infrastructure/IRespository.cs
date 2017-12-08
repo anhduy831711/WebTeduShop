@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Data.Infrastructure
 {
@@ -11,12 +9,16 @@ namespace TeduShop.Data.Infrastructure
     {
         //Marks an entity as new
         void Add(T entity);
+
         //Marks an entity as Modified
         void Update(T entity);
+
         //Marks an entity to be removed
         void Delete(T entity);
+
         //Delete Multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
+
         //Get an entity by int id
         T GetSingleById(int id);
 
