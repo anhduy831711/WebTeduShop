@@ -56,6 +56,11 @@
     <Compile Include="Infrastructure\IUnitOfWord.cs" />
     <Compile Include="Infrastructure\RespositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWord.cs" />
+    <Compile Include="Migrations\201712081225449_initialDB.cs" />
+    <Compile Include="Migrations\201712081225449_initialDB.Designer.cs">
+      <DependentUpon>201712081225449_initialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Respositories\FooterRespository.cs" />
     <Compile Include="Respositories\MenuGroupResponsitory.cs" />
@@ -76,6 +81,11 @@
       <Project>{e2d6ca76-43b1-489b-9a5a-c13613fff9c2}</Project>
       <Name>TeduSop.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712081225449_initialDB.resx">
+      <DependentUpon>201712081225449_initialDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
