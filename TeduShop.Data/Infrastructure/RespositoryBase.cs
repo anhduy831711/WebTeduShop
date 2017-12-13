@@ -65,7 +65,7 @@ namespace TeduShop.Data.Infrastructure
             return dbSet.Find(id);
         }
 
-        private IQueryable<T> GetAll(string[] includes = null)
+        public IQueryable<T> GetAll(string[] includes = null)
         {
             //handle includes for associated objects if applicable
             if (includes != null && includes.Count() > 0)
@@ -85,7 +85,7 @@ namespace TeduShop.Data.Infrastructure
             return GetAll(includes).FirstOrDefault(expression);
         }
 
-        private IEnumerable<T> GetMulti(Expression<Func<T, bool>> pridicate, string[] includes = null)
+        public IEnumerable<T> GetMulti(Expression<Func<T, bool>> pridicate, string[] includes = null)
         {
             //handle includes for associated objects if applicable
             if (includes != null && includes.Count() > 0)
@@ -100,7 +100,7 @@ namespace TeduShop.Data.Infrastructure
             return dataContext.Set<T>().Where<T>(pridicate).AsQueryable<T>();
         }
 
-        private IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 50, string[] includes = null)
+        public IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 50, string[] includes = null)
         {
             int skipCount = index * size;
             IQueryable<T> _resetSet;
@@ -121,12 +121,12 @@ namespace TeduShop.Data.Infrastructure
             return _resetSet.AsQueryable();
         }
 
-        private int Count(Expression<Func<T, bool>> where)
+        public int Count(Expression<Func<T, bool>> where)
         {
             return dbSet.Count(where);
         }
 
-        private bool CheckContains(Expression<Func<T, bool>> predicate)
+        public bool CheckContains(Expression<Func<T, bool>> predicate)
         {
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }

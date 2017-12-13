@@ -1,9 +1,13 @@
-﻿using TeduShop.Data.Infrastructure;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using TeduShop.Data.Infrastructure;
 using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Respositories
 {
-    public interface IFooterRespository
+    public interface IFooterRespository:IRepository<Footer>
     {
     }
 
