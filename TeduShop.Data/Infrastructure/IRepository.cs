@@ -8,14 +8,14 @@ namespace TeduShop.Data.Infrastructure
     public interface IRepository<T> where T : class
     {
         //Marks an entity as new
-        void Add(T entity);
+        T Add(T entity);
 
         //Marks an entity as Modified
         void Update(T entity);
 
         //Marks an entity to be removed
-        void Delete(T entity);
-        void Delete(int id);
+        T Delete(T entity);
+        T Delete(int id);
 
         //Delete Multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
@@ -25,7 +25,7 @@ namespace TeduShop.Data.Infrastructure
 
         T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
 
-        IQueryable<T> GetAll(string[] includes = null);
+        IEnumerable<T> GetAll(string[] includes = null);
 
         IEnumerable<T> GetMulti(Expression<Func<T, bool>> pridicate, string[] includes = null);
 
