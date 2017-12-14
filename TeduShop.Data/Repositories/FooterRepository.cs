@@ -9,6 +9,7 @@ namespace TeduShop.Data.Respositories
 {
     public interface IFooterRespository:IRepository<Footer>
     {
+
     }
 
     public class FooterRespository : RespositoryBase<Footer>, IFooterRespository
