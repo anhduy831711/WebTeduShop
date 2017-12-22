@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using TeduShop.Model.Models;
+using TeduShop.MoDel.Models;
 
 namespace TeduShop.Data
 {
@@ -27,7 +28,7 @@ namespace TeduShop.Data
         public DbSet<SystemConfig> SystemConfigs { set; get; }
         public DbSet<Tag> Tags { set; get; }
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
-
+        public DbSet<Error> Errors { get; set; }
         protected override void OnModelCreating(DbModelBuilder Builder)
         {
         }
