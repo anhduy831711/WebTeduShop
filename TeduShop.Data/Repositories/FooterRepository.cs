@@ -7,7 +7,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Respositories
 {
-    public interface IFooterRespository:IRepository<Footer>
+    public interface IFooterRespository : IRespository<Footer>
     {
 
     }

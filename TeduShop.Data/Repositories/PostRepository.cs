@@ -5,7 +5,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Respositories
 {
-    public interface IPostRespository : IRepository<Post>
+    public interface IPostRespository : IRespository<Post>
     {
         IEnumerable<Post> GetAllByTag(string tag, int pageIndex, int pageSize, out int TotalRow);
     }

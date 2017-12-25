@@ -52,7 +52,7 @@
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />
-    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IRespository.cs" />
     <Compile Include="Infrastructure\IUnitOfWord.cs" />
     <Compile Include="Infrastructure\RespositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWord.cs" />
@@ -68,7 +68,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ErrorResponsitory.cs" />
     <Compile Include="Repositories\FooterRepository.cs" />
-    <Compile Include="Repositories\MenuGroupRespository.cs" />
+    <Compile Include="Repositories\MenuGroupRepository.cs" />
     <Compile Include="Repositories\MenuRepository.cs" />
     <Compile Include="Repositories\OrderDetailRepository.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />

@@ -16,9 +16,9 @@ namespace TeduShop.Service
     }
     public class ErrorService : IErrorService
     {
-        IErrorResponsitory _errorRepository;
+        IErrorRespository _errorRepository;
         IUnitOfWord _unitOfWord;
-        public ErrorService(IErrorResponsitory errorRepository , IUnitOfWord unitOfWord)
+        public ErrorService(IErrorRespository errorRepository , IUnitOfWord unitOfWord)
         {
             this._errorRepository = errorRepository;
             this._unitOfWord = unitOfWord;

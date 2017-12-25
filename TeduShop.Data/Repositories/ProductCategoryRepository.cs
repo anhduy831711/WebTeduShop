@@ -5,12 +5,12 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Responsitories
 {
-    public interface IProductCategoryResponsitory : IRepository<ProductCategory>
+    public interface IProductCategoryRespository : IRespository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }
 
-    public class ProductCategoryRespository : RespositoryBase<ProductCategory>, IProductCategoryResponsitory
+    public class ProductCategoryRespository : RespositoryBase<ProductCategory>, IProductCategoryRespository
     {
         public ProductCategoryRespository(IDbFactory dbFactory) : base(dbFactory)
         {

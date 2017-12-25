@@ -8,11 +8,11 @@ using TeduShop.MoDel.Models;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IErrorResponsitory : IRepository<Error>
+    public interface IErrorRespository : IRespository<Error>
     {
 
     }
-    public class FooterRespository : RespositoryBase<Error>, IErrorResponsitory
+    public class FooterRespository : RespositoryBase<Error>, IErrorRespository
     {
         public FooterRespository(IDbFactory dbFactory) : base(dbFactory)
         {

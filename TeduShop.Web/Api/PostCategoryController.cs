@@ -44,18 +44,11 @@ namespace TeduShop.Web.Api
         public HttpResponseMessage Get(HttpRequestMessage request)
         {
             return CreateHttpResponse(request, () =>
-            {
-                HttpResponseMessage reponse = null;
-                if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
+            { 
+            
                     var listCategory = _postCategoryService.GetAll();
 
-                    reponse = request.CreateResponse(HttpStatusCode.OK,listCategory);
-                }
+                    HttpResponseMessage reponse = request.CreateResponse(HttpStatusCode.OK,listCategory);
                 return reponse;
             }
             );
