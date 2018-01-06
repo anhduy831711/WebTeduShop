@@ -75,7 +75,6 @@ namespace TeduShop.Web.Api
                     postCategory.UpdatePostCategory(postCategoryVm);
                     _postCategoryService.Update(postCategory);
                     _postCategoryService.Save();
-
                     reponse = request.CreateResponse(HttpStatusCode.OK);
                 }
                 return reponse;
