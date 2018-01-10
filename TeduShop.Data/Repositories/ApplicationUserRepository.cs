@@ -8,13 +8,13 @@ using TeduShop.MoDel.Models;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IErrorRespository : IRespository<Error>
+    public interface IApplicationUserRepository : IRespository<ApplicationUser>
     {
 
     }
-    public class FooterRespository : RespositoryBase<Error>, IErrorRespository
+    public class ApplicationUserRepository : RespositoryBase<ApplicationUser>, IApplicationUserRepository
     {
-        public FooterRespository(IDbFactory dbFactory) : base(dbFactory)
+        public ApplicationUserRepository(IDbFactory dbFactory) :base(dbFactory)
         {
 
         }

@@ -3,18 +3,31 @@
 var myApp = angular.module('MyModule', []);
 
 myApp.controller("StudentController", StudentController);
-myApp.controller("TeacherController", TeacherController);
-myApp.controller("SchoolController", SchoolController);
+myApp.service('Validation', Validation);
 
-function StudentController($scope)
+StudentController.$inject = ['$scope', 'Validation'];
+
+function StudentController($scope, Validation)
 {
-    //$scope.message = "My Message by student";
+    $scope.CheckNumber = function () {
+        $scope.mesage = Validation.CheckNumber($scope.num);
+    }
 }
 
-function TeacherController($scope) {
-    //$scope.message = "My Message by teacher";
-}
-
-function SchoolController($scope) {
-    $scope.message = "My Message by School";
+function Validation($window)
+{
+    return {
+        CheckNumber: CheckNumber
+    }
+    function CheckNumber(input)
+    {
+        if(input%2==0)
+        {
+            return "this is even";
+        }
+        else
+        {
+            return "this is odd";
+        }
+    }
 }
