@@ -4,6 +4,7 @@ var myApp = angular.module('MyModule', []);
 
 myApp.controller("StudentController", StudentController);
 myApp.service('Validation', Validation);
+myApp.directive('testDirective', testDirective);
 
 StudentController.$inject = ['$scope', 'Validation'];
 
@@ -29,5 +30,13 @@ function Validation($window)
         {
             return "this is odd";
         }
+    }
+}
+
+function testDirective()
+{
+    return {
+        restrict :"A",
+        templateUrl:"/Scripts/spa/testDirective.html"
     }
 }
