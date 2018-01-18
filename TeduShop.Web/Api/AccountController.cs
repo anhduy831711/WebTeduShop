@@ -4,21 +4,23 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using TeduShop.Service;
 using TeduShop.Web.App_Start;
+using TeduShop.Web.Infrastructure.Core;
 
 namespace TeduShop.Web.Api
 {
     [RoutePrefix("api/account")]
-    public class AccountController : ApiController
+    public class AccountController : ApiControllerBase
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public AccountController()
+        public AccountController(IErrorService errorService):base(errorService)
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager, IErrorService errorService) : base(errorService)
         {
             UserManager = userManager;
             SignInManager = signInManager;

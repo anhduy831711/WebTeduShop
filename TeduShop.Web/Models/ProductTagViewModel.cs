@@ -9,13 +9,10 @@ namespace TeduShop.Web.Models
     {
         public int ProductId { get; set; }
 
-       
         public string TagID { get; set; }
 
-        
         public virtual ProductTagViewModel Product { get; set; }
 
-       
         public virtual TagViewModel Tag { get; set; }
     }
 }
