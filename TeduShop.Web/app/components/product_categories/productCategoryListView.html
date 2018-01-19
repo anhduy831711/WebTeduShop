@@ -29,23 +29,29 @@
         <div class="box-body">
             <div class="col-md-12">
                 <div class="box">
-                    <div class="box-body">
-                        <table class="table table-bordered text-center">
-                            <tr>
-                                <th style="width: 5%">ID</th>
-                                <th style="width: 40%">Tên Danh Mục</th>
-                                <th style="width: 45%">Ngày Tạo</th>
-                                <th style="width: 10%">Trạng Thái</th>
-                            </tr>
-                            <tr ng-repeat="item in productCategories">
-                                <td>{{item.ID}}</td>
-                                <td>{{item.Name}}</td>
-                                <td>{{item.CreatedDate}}</td>
-                                <td><span class="badge bg-red">{{item.Status}}</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- /.box-body -->
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <th style="width: 5%">ID</th>
+                            <th style="width: 50%">Tên Danh Mục</th>
+                            <th style="width: 30%">Ngày Tạo</th>
+                            <th style="width: 5%">Trạng Thái</th>
+                            <th style="width:10%">Thao Tác</th>
+                        </tr>
+                        <tr ng-repeat="item in productCategories">
+                            <td>{{item.ID}}</td>
+                            <td>{{item.Name}}</td>
+                            <td>{{item.CreatedDate | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                            <td>
+                                <span ng-class="{'badge bg-red':item.Status==false,'badge bg-blue':item.Status==true}">
+                                    {{item.Status | statusFilter}}
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-facebook"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                    </table>
                     <div class="box-footer clearfix">
                         <ul class="pagination pagination-sm no-margin pull-right">
                             <li><a href="#">&laquo;</a></li>
