@@ -12,11 +12,11 @@ namespace TeduShop.Data.Repositories
     {
 
     }
-    public class FooterRespository : RespositoryBase<Error>, IErrorRespository
+    public class ErrorRespository : RespositoryBase<Error>, IErrorRespository
     {
-        public FooterRespository(IDbFactory dbFactory) : base(dbFactory)
+        public ErrorRespository(IDbFactory dbFactory) : base(dbFactory)
         {
-
+            
         }
     }
 }

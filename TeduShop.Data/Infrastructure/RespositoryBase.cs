@@ -147,7 +147,7 @@ namespace TeduShop.Data.Infrastructure
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
 
-        public virtual IEnumerable<T> GetMany(Expression<Func<T, bool>> where, string includes)
+        public virtual IEnumerable<T> GetMany(Expression<Func<T, bool>> where, string[] includes = null)
         {
             return dbSet.Where(where).ToList();
         }
