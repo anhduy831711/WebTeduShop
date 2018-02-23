@@ -61,21 +61,15 @@
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></button>
                             </td>
                         </tr>
-                        <tfoot>
-                            <tr>
-                                <td colspan="4">
-                                    Tổng Số Bản Ghi :{{totalCount}}
-                                </td>
-                            </tr>
-                        </tfoot>
                     </table>
-                    <div class="box-footer clearfix">
-                        <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListProductCategory(page)"></pager-directive>
+                    <div class="box-footer" style="float:right">
+                        Tổng Số Bản Ghi :{{totalCount}}
                     </div>
                 </div>
                 <!-- /.box -->
             </div>
-            <div class="box-footer">
+            <div class="box-footer" style="float:right">
+                <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListProductCategory(page)"></pager-directive>
             </div>
             <!-- /.box-footer-->
         </div>
