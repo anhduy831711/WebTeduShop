@@ -5,7 +5,8 @@
     "angular": "*",
     "angular-ui-router": "*",
     "bootstrap": "*",
+    "fastclick": "*",
     "slimscroll": "*",
-    "fastclick": "*"
+    "toastr": "*"
   }
 }
