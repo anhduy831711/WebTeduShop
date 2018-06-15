@@ -1,3 +1,82 @@
+## 1.0.18 (2018-05-19)
+[Compare `@uirouter/angularjs` versions 1.0.17 and 1.0.18](https://github.com/angular-ui/ui-router/compare/1.0.17...1.0.18)
+
+### Bug Fixes
+
+* **bundles:** Do not run prettier against release/* bundles when publishing to bower ([9b420fa](https://github.com/angular-ui/ui-router/commit/9b420fa))
+
+## 1.0.17 (2018-05-13)
+[Compare `@uirouter/angularjs` versions 1.0.16 and 1.0.17](https://github.com/angular-ui/ui-router/compare/1.0.16...1.0.17)
+
+
+### Updated `@uirouter/core` from 5.0.18 to 5.0.19
+[Compare `@uirouter/core` versions 5.0.18 and 5.0.19](https://github.com/ui-router/core/compare/5.0.18...5.0.19)
+
+### Bug Fixes
+
+* **enums:** Workaround angular compiler export issue https://github.com/angular/angular/issues/23759 ([38d25fa](https://github.com/ui-router/core/commit/38d25fa))
+
+## 1.0.16 (2018-05-03)
+[Compare `@uirouter/angularjs` versions 1.0.15 and 1.0.16](https://github.com/angular-ui/ui-router/compare/1.0.15...1.0.16)
+
+### Bug Fixes
+
+* **docs:** downgrade to [@types](https://github.com/types)/angular[@1](https://github.com/1).6.25 to fix typings error when generating docs ([5850136](https://github.com/angular-ui/ui-router/commit/5850136))
+
+
+### Updated `@uirouter/core` from 5.0.17 to 5.0.18
+[Compare `@uirouter/core` versions 5.0.17 and 5.0.18](https://github.com/ui-router/core/compare/5.0.17...5.0.18)
+
+### Bug Fixes
+
+* **angular:** A hack to force the Angular compiler to import from module index ([d56a2be](https://github.com/ui-router/core/commit/d56a2be))
+* **StateRegistry:** Notify listeners of added states when there are orphans in the state queue ([5a9bac9](https://github.com/ui-router/core/commit/5a9bac9))
+* **transition:** Fix typing of Transition.params() ([ebea30e](https://github.com/ui-router/core/commit/ebea30e))
+* **transition:** Normalize `error()` to always return `Rejection` ([9bcc5db](https://github.com/ui-router/core/commit/9bcc5db))
+
+## 1.0.15 (2018-02-12)
+[Compare `@uirouter/angularjs` versions 1.0.14 and 1.0.15](https://github.com/angular-ui/ui-router/compare/1.0.14...1.0.15)
+
+### Bug Fixes
+
+* **package:** update [@uirouter](https://github.com/uirouter)/core to version 5.0.17 ([1b54264](https://github.com/angular-ui/ui-router/commit/1b54264))
+
+
+### Updated `@uirouter/core` from 5.0.16 to 5.0.17
+[Compare `@uirouter/core` versions 5.0.16 and 5.0.17](https://github.com/ui-router/core/compare/5.0.16...5.0.17)
+
+### Bug Fixes
+
+* **core:** Fix leak of old transitions by mutating pathnode*.resolvables*.data ([0a1f518](https://github.com/ui-router/core/commit/0a1f518))
+
+## 1.0.14 (2018-01-31)
+[Compare `@uirouter/angularjs` versions 1.0.13 and 1.0.14](https://github.com/angular-ui/ui-router/compare/1.0.13...1.0.14)
+
+### Bug Fixes
+
+* **uiSrefActive:** don't match fuzzy on lazy loaded future states ([01430ee](https://github.com/angular-ui/ui-router/commit/01430ee))
+
+
+### Features
+
+* **uiSrefActive:** Support arrays of globs for ng-class style ([b215343](https://github.com/angular-ui/ui-router/commit/b215343))
+
+
+### Updated `@uirouter/core` from 5.0.14 to 5.0.16
+[Compare `@uirouter/core` versions 5.0.14 and 5.0.16](https://github.com/ui-router/core/compare/5.0.14...5.0.16)
+
+### Bug Fixes
+
+* **common:** Fix signature of  for objects (make target optional) ([61d0afc](https://github.com/ui-router/core/commit/61d0afc))
+* **core:** Fix memory leak of resolve data from ALL transitions ever ([7f2aed1](https://github.com/ui-router/core/commit/7f2aed1))
+* **pathNode:** add backwards compat for PathNode.clone(). Add retainedWithToParams to treeChanges interface. ([4833a32](https://github.com/ui-router/core/commit/4833a32))
+
+
+### Features
+
+* **common:** Add map-in-place support to map() ([12bc7d8](https://github.com/ui-router/core/commit/12bc7d8))
+* **common:** Add onEvict() callback registry for queues with max length ([c19d007](https://github.com/ui-router/core/commit/c19d007))
+
 ## 1.0.13 (2018-01-10)
 [Compare `@uirouter/angularjs` versions 1.0.12 and 1.0.13](https://github.com/angular-ui/ui-router/compare/1.0.12...1.0.13)
 
