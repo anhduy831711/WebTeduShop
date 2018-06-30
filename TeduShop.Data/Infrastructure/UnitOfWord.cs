@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
-
-namespace TeduShop.Data.Infrastructure
+﻿namespace TeduShop.Data.Infrastructure
 {
     public class UnitOfWord : IUnitOfWord
     {
@@ -21,6 +14,7 @@ namespace TeduShop.Data.Infrastructure
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
+
         public void Commit()
         {
             DbContext.SaveChanges();

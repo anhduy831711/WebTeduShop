@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Data.Infrastructure
 {
     public interface IRespository<T> where T : class
     {
         //Marks an entity as new
-        void Add(T entity);
+        T Add(T entity);
+
         //Marks an entity as Modified
         void Update(T entity);
+
         //Marks an entity to be removed
-        void Delete(T entity);
+        T Delete(T entity);
+        T Delete(int id);
+
         //Delete Multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
+
         //Get an entity by int id
         T GetSingleById(int id);
 
         T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
 
-        IQueryable<T> GetAll(string[] includes = null);
+        IEnumerable<T> GetAll(string[] includes = null);
 
         IEnumerable<T> GetMulti(Expression<Func<T, bool>> pridicate, string[] includes = null);
 

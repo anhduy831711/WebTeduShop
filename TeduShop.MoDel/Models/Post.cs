@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using TeduShop.Model.Abstract;
 
@@ -12,6 +13,7 @@ namespace TeduShop.Model.Models
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { set; get; }
 
         [Required]
@@ -36,5 +38,7 @@ namespace TeduShop.Model.Models
 
         [ForeignKey("CategogyID")]
         public virtual PostCategory PostCategory { get; set; }
+
+        public virtual IEnumerable<PostTag> PostTags { get; set; }
     }
 }

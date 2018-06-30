@@ -38,6 +38,14 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -56,11 +64,43 @@
     <Compile Include="Infrastructure\IUnitOfWord.cs" />
     <Compile Include="Infrastructure\RespositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWord.cs" />
+    <Compile Include="Migrations\201712081225449_initialDB.cs" />
+    <Compile Include="Migrations\201712081225449_initialDB.Designer.cs">
+      <DependentUpon>201712081225449_initialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712221038568_AddErroTable.cs" />
+    <Compile Include="Migrations\201712221038568_AddErroTable.Designer.cs">
+      <DependentUpon>201712221038568_AddErroTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712260637356_AddTableUser.cs" />
+    <Compile Include="Migrations\201712260637356_AddTableUser.Designer.cs">
+      <DependentUpon>201712260637356_AddTableUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712260641307_updateUserRole.cs" />
+    <Compile Include="Migrations\201712260641307_updateUserRole.Designer.cs">
+      <DependentUpon>201712260641307_updateUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712261007070_ChangeKey.cs" />
+    <Compile Include="Migrations\201712261007070_ChangeKey.Designer.cs">
+      <DependentUpon>201712261007070_ChangeKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Respositories\FooterRespository.cs" />
-    <Compile Include="Respositories\MenuGroupResponsitory.cs" />
-    <Compile Include="Respositories\ProductCategoryRespository.cs" />
-    <Compile Include="Respositories\ProductRespository.cs" />
+    <Compile Include="Repositories\ApplicationUserRepository.cs" />
+    <Compile Include="Repositories\ErrorResponsitory.cs" />
+    <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\MenuGroupRepository.cs" />
+    <Compile Include="Repositories\MenuRepository.cs" />
+    <Compile Include="Repositories\OrderDetailRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\PageRepository.cs" />
+    <Compile Include="Repositories\PostCategoryRepository.cs" />
+    <Compile Include="Repositories\PostRepository.cs" />
+    <Compile Include="Repositories\ProductCategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\SlideRepository.cs" />
+    <Compile Include="Repositories\SupportOnlineRepository.cs" />
+    <Compile Include="Repositories\SystemConfigRepository.cs" />
     <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +116,23 @@
       <Project>{e2d6ca76-43b1-489b-9a5a-c13613fff9c2}</Project>
       <Name>TeduSop.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712081225449_initialDB.resx">
+      <DependentUpon>201712081225449_initialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712221038568_AddErroTable.resx">
+      <DependentUpon>201712221038568_AddErroTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712260637356_AddTableUser.resx">
+      <DependentUpon>201712260637356_AddTableUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712260641307_updateUserRole.resx">
+      <DependentUpon>201712260641307_updateUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712261007070_ChangeKey.resx">
+      <DependentUpon>201712261007070_ChangeKey.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
