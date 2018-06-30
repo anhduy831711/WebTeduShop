@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,9 +10,10 @@ namespace TeduShop.Web.Models
     {
         public int ID { set; get; }
 
-      
+        [Required]
         public string Name { set; get; }
 
+        [Required]
         public string Alias { set; get; }
 
         public int? ParentID { set; get; }
@@ -31,13 +33,12 @@ namespace TeduShop.Web.Models
         public DateTime? UpdateDate { set; get; }
 
         public string UpdateBy { set; get; }
-
+        [Required(ErrorMessage ="Meta KeyWord Bắt Buộc Nhập")]
         public string MetaKeyWord { set; get; }
 
         public string MetaDescription { set; get; }
 
+        [Required]
         public bool Status { get; set; }
-
-        public virtual IEnumerable<ProductViewModel> Products { set; get; }
     }
 }

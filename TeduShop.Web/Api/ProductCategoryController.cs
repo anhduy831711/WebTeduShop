@@ -9,7 +9,7 @@ using TeduShop.Model.Models;
 using TeduShop.Service;
 using TeduShop.Web.Infrastructure.Core;
 using TeduShop.Web.Models;
-
+using TeduShop.Web.Infrastructure.Extensions;
 namespace TeduShop.Web.Api
 {
     [RoutePrefix("api/productcategory")]
@@ -23,6 +23,7 @@ namespace TeduShop.Web.Api
         }
 
         [Route("getall")]
+        [HttpGet]
         public HttpResponseMessage getAll(HttpRequestMessage request,string keyword, int page,int pageSize = 20)
         {
             return CreateHttpResponse(request, () =>
@@ -44,6 +45,44 @@ namespace TeduShop.Web.Api
                  var response = request.CreateResponse(HttpStatusCode.OK, paginationSet);
                  return response;
              });
+        }
+
+        [Route("getallparent")]
+        [HttpGet]
+        public HttpResponseMessage getAll(HttpRequestMessage request)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                var model = _productCategorySevice.GetAll();
+                var responseData = Mapper.Map<IEnumerable<ProductCategory>, IEnumerable<ProductCategoryViewModel>>(model);
+
+                var response = request.CreateResponse(HttpStatusCode.OK, responseData);
+                return response;
+            });
+        }
+
+        [Route("create")]
+        [HttpPost]
+        public HttpResponseMessage Create(HttpRequestMessage request,ProductCategoryViewModel productCategoryVm)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage reponse = null;
+                if (!ModelState.IsValid)
+                {
+                    reponse = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var newProductCategory = new ProductCategory();
+                    newProductCategory.UpdateProductCategory(productCategoryVm);
+                    _productCategorySevice.Add(newProductCategory);
+                    _productCategorySevice.Save();
+                    var reposeData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(newProductCategory);
+                    reponse = request.CreateResponse(HttpStatusCode.Created, reposeData);
+                }
+                return reponse;
+            });
         }
     }
 }

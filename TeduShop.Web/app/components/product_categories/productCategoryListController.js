@@ -9,8 +9,8 @@
         $scope.pagesCount = 0;
         $scope.getListProductCategory = getListProductCategory;
         $scope.keyword = '';
-        
         $scope.search = search;
+
         function search()
         {
             getListProductCategory();
@@ -29,10 +29,6 @@
                 if (result.data.TotalCount == 0)
                 {
                     notificationService.displayWarning("Không Tìm Thấy Bảng Ghi Nào.")
-                }
-                else
-                {
-                    notificationService.displaySuccess("Tìm Thấy Tổng Cộng " + result.data.TotalCount + " Bảng Ghi");
                 }
                 $scope.productCategories = result.data.Items;
                 $scope.page = result.data.Page;
