@@ -21,13 +21,13 @@
             })
         }
 
-        function LoadProductCategories() {
+        function LoadParentCategories() {
             apiService.get("api/productcategory/getallparent", null, function (result) {
                 $scope.parentcategories = result.data;
             }, function () {
                 cosole.log('Cannot get list parents');
             })
         }
-        LoadProductCategories();
+        LoadParentCategories();
     }
 })(angular.module('tedushop.product_categories'));

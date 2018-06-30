@@ -49,12 +49,26 @@ namespace TeduShop.Web.Api
 
         [Route("getallparent")]
         [HttpGet]
-        public HttpResponseMessage getAll(HttpRequestMessage request)
+        public HttpResponseMessage getAllParent(HttpRequestMessage request)
         {
             return CreateHttpResponse(request, () =>
             {
                 var model = _productCategorySevice.GetAll();
                 var responseData = Mapper.Map<IEnumerable<ProductCategory>, IEnumerable<ProductCategoryViewModel>>(model);
+
+                var response = request.CreateResponse(HttpStatusCode.OK, responseData);
+                return response;
+            });
+        }
+
+        [Route("getbyid/{id}")]
+        [HttpGet]
+        public HttpResponseMessage GetById(HttpRequestMessage request,int id)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                var model = _productCategorySevice.GetById(id);
+                var responseData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(model);
 
                 var response = request.CreateResponse(HttpStatusCode.OK, responseData);
                 return response;
@@ -76,9 +90,35 @@ namespace TeduShop.Web.Api
                 {
                     var newProductCategory = new ProductCategory();
                     newProductCategory.UpdateProductCategory(productCategoryVm);
+                    newProductCategory.CreatedDate = DateTime.Now;
                     _productCategorySevice.Add(newProductCategory);
                     _productCategorySevice.Save();
                     var reposeData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(newProductCategory);
+                    reponse = request.CreateResponse(HttpStatusCode.Created, reposeData);
+                }
+                return reponse;
+            });
+        }
+
+        [Route("update")]
+        [HttpPut]
+        public HttpResponseMessage Update(HttpRequestMessage request, ProductCategoryViewModel productCategoryVm)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage reponse = null;
+                if (!ModelState.IsValid)
+                {
+                    reponse = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var dbProductCategory = _productCategorySevice.GetById(productCategoryVm.ID);
+                    dbProductCategory.UpdateProductCategory(productCategoryVm);
+                    dbProductCategory.UpdateDate = DateTime.Now;
+                    _productCategorySevice.Update(dbProductCategory);
+                    _productCategorySevice.Save();
+                    var reposeData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(dbProductCategory);
                     reponse = request.CreateResponse(HttpStatusCode.Created, reposeData);
                 }
                 return reponse;

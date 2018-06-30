@@ -6,7 +6,7 @@
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang Chủ</a></li>
         <li><a href="#">Sản Phẩm</a></li>
         <li><a ui-sref="product_categories">Danh Sách Danh Mục</a></li>
-        <li class="active">Thêm Mới</li>
+        <li class="active">Cập Nhật</li>
     </ol>
 </section>
 <section class="content">
@@ -14,14 +14,14 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">Thêm Danh Mục Mới</h3>
+                <h3 class="box-title">Cập Nhật Danh Mục: {{productCategory.Name}}</h3>
             </div><!-- /.box-header -->
-            <form class="form-horizontal" novalidate name="frmAddProductCategory" role="form" ng-submit="AddProductCategory()">
+            <form class="form-horizontal" novalidate name="frmUpdateProductCategory" role="form" ng-submit="UpdateProductCategory()">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Tên Danh Mục</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" name="name" ng-model="productCategory.Name">
+                            <input type="text" class="form-control" name="name" ng-model="productCategory.Name" ng-change="GetSeoTiltle()">
                         </div>
                     </div>
                     <div class="form-group">
