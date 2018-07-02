@@ -28,19 +28,22 @@
                 </div>
                 <div class="col-md-6">
                     <button class="btn btn-success" ui-sref="add_product_category">Thêm Mới</button>
+                    <button class="btn btn-danger" ng-click="deleteMulti()" id="btnDelete" disabled>Xóa</button>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="box">
                     <table class="table table-bordered text-center">
                         <tr>
-                            <th style="width: 5%">ID</th>
+                            <th style="width: 2%"><input type="checkbox" name="all" ng-click="seleteAll()"/></th>
+                            <th style="width: 3%">ID</th>
                             <th style="width: 50%">Tên Danh Mục</th>
                             <th style="width: 30%">Ngày Tạo</th>
                             <th style="width: 5%">Trạng Thái</th>
                             <th style="width:10%">Thao Tác</th>
                         </tr>
                         <tr ng-repeat="item in productCategories">
+                            <td><input type="checkbox" ng-model="item.checked" name="all" /></td>
                             <td>{{item.ID}}</td>
                             <td>{{item.Name}}</td>
                             <td>{{item.CreatedDate | date:'dd/MM/yyyy HH:mm:ss'}}</td>
@@ -51,7 +54,7 @@
                             </td>
                             <td>
                                 <button class="btn btn-sm btn-facebook" ui-sref="edit_product_category({id:item.ID})"><i class="fa fa-pencil"></i></button>
-                                <button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></button>
+                                <button class="btn btn-sm btn-danger" ng-click="deleteProductCategory(item.ID)"><i class="fa fa-trash-o"></i></button>
                             </td>
                         </tr>
                     </table>

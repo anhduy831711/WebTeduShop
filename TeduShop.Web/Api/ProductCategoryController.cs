@@ -10,6 +10,8 @@ using TeduShop.Service;
 using TeduShop.Web.Infrastructure.Core;
 using TeduShop.Web.Models;
 using TeduShop.Web.Infrastructure.Extensions;
+using System.Web.Script.Serialization;
+
 namespace TeduShop.Web.Api
 {
     [RoutePrefix("api/productcategory")]
@@ -120,6 +122,52 @@ namespace TeduShop.Web.Api
                     _productCategorySevice.Save();
                     var reposeData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(dbProductCategory);
                     reponse = request.CreateResponse(HttpStatusCode.Created, reposeData);
+                }
+                return reponse;
+            });
+        }
+
+        [Route("delete")]
+        [HttpDelete]
+        public HttpResponseMessage Delete(HttpRequestMessage request, int id)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage reponse = null;
+                if (!ModelState.IsValid)
+                {
+                    reponse = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    _productCategorySevice.Delete(id);
+                    _productCategorySevice.Save();
+                    reponse = request.CreateResponse(HttpStatusCode.Created);
+                }
+                return reponse;
+            });
+        }
+
+        [Route("deletemulti")]
+        [HttpDelete]
+        public HttpResponseMessage DeleteMulti(HttpRequestMessage request, string checkedProductCategories)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage reponse = null;
+                if (!ModelState.IsValid)
+                {
+                    reponse = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var listProductCategory = new JavaScriptSerializer().Deserialize<List<int>>(checkedProductCategories);
+                    foreach(var item in listProductCategory)
+                    {
+                        _productCategorySevice.Delete(item);
+                    }
+                    _productCategorySevice.Save();
+                    reponse = request.CreateResponse(HttpStatusCode.Created);
                 }
                 return reponse;
             });
