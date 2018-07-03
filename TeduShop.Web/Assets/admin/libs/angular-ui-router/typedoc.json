@@ -29,6 +29,7 @@
       "external-aliases": "internalapi,external",
       "navigation-label-globals": "@uirouter/angularjs"
     }
+<<<<<<< HEAD
   },
   "files": [
     "src/index.ts",
@@ -37,4 +38,7 @@
     ".downstream_cache/@uirouter/core/src/index.ts",
     "node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts"
   ]
+=======
+  }
+>>>>>>> origin/Bai24
 }
