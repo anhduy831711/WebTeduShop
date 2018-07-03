@@ -9,6 +9,7 @@
     "fastclick": "*",
     "ngBootbox": "*",
     "slimscroll": "*",
-    "toastr": "*"
+    "toastr": "*",
+    "ckeditor": "*"
   }
 }

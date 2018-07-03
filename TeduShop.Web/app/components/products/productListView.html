@@ -1,1 +1,76 @@
-﻿<h1>Product List sakjdhaksjdhkjashdkjash</h1>
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Sản Phẩm
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Trang Chủ</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li class="active">Danh Sách</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Danh Sách Sản Phẩm</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+            <div class="row" style="margin:5px">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Từ Khóa ..." ng-model="keyword">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" ng-click="search()" type="button">Tìm Kiếm</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-success" ui-sref="products_add">Thêm Mới</button>
+                    <button class="btn btn-danger" ng-click="deleteMulti()" id="btnDelete" disabled>Xóa</button>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="box">
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <th style="width: 2%"><input type="checkbox" name="all" ng-click="seleteAll()" /></th>
+                            <th style="width: 3%">ID</th>
+                            <th style="width: 50%">Tên Danh Mục</th>
+                            <th style="width: 30%">Ngày Tạo</th>
+                            <th style="width: 5%">Trạng Thái</th>
+                            <th style="width:10%">Thao Tác</th>
+                        </tr>
+                        <tr ng-repeat="item in productCategories">
+                            <td><input type="checkbox" ng-model="item.checked" name="all" /></td>
+                            <td>{{item.ID}}</td>
+                            <td>{{item.Name}}</td>
+                            <td>{{item.CreatedDate | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                            <td>
+                                <span ng-class="{'badge bg-red':item.Status==false,'badge bg-blue':item.Status==true}">
+                                    {{item.Status | statusFilter}}
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-facebook" ui-sref="edit_product_category({id:item.ID})"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-sm btn-danger" ng-click="deleteProductCategory(item.ID)"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="col-md-12 box-footer">
+            <div style="float:right">
+                <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListProduct(page)"></pager-directive>
+            </div>
+        </div>
+        <!-- /.box-footer-->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
