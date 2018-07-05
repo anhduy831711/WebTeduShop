@@ -1,7 +1,7 @@
 ﻿(function (app) {
     app.controller('productAddController', productAddController);
-    productAddController.$inject = ['$scope', 'apiService', 'notificationService', '$state'];
-    function productAddController($scope, apiService, notificationService, $state) {
+    productAddController.$inject = ['$scope', 'apiService', 'notificationService', '$state', 'commonService'];
+    function productAddController($scope, apiService, notificationService, $state, commonService) {
         $scope.product = {
             CreatedDate: new Date(),
             Status: true,
@@ -23,9 +23,13 @@
             }
             finder.popup();
         }
+        $scope.GetSeoTiltle = GetSeoTiltle;
 
+        function GetSeoTiltle() {
+            $scope.product.Alias = commonService.getSeoTitle($scope.product.Name);
+        }
         function AddProduct() {
-            apiService.post('api/productcategory/create', $scope.product, function (result) {
+            apiService.post('api/product/create', $scope.product, function (result) {
                 notificationService.displaySuccess(result.data.Name + ' Đã Được Thêm Mới');
                 $state.go('products');
             }, function (error) {

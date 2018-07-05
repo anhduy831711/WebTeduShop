@@ -91,6 +91,7 @@ namespace TeduShop.Web.Infrastructure.Extensions
             product.Alias = productVm.Alias;
             product.CreadedBy = productVm.CreadedBy;
             product.CreatedDate = productVm.CreatedDate;
+            product.CategogyID = productVm.CategogyID;
             product.Descreption = productVm.Descreption;
             product.HomeFlag = productVm.HomeFlag;
             product.ID = productVm.ID;
@@ -107,6 +108,7 @@ namespace TeduShop.Web.Infrastructure.Extensions
             product.PromotionPrice = productVm.PromotionPrice;
             product.ViewCount = productVm.ViewCount;
             product.Warranty = productVm.Warranty;
+            product.Tags = productVm.Tags;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TeduShop.Data.Infrastructure;
 using TeduShop.Data.Respositories;
 using TeduShop.Model.Models;
+using TeduSop.Common;
 
 namespace TeduShop.Service
 {
@@ -28,17 +29,47 @@ namespace TeduShop.Service
     public class ProductService : IProductService
     {
         private IProductRespository _ProductRepository;
+        private ITagRespository _tagRepository;
         private IUnitOfWord _unitOfWord;
+        private IProductTagRespository _productTagRepository;
 
-        public ProductService(IProductRespository ProductRepository, IUnitOfWord unitOfWord)
+        public ProductService(IProductRespository ProductRepository,IProductTagRespository productTagRepository, ITagRespository tagRepository , IUnitOfWord unitOfWord)
         {
             this._ProductRepository = ProductRepository;
             this._unitOfWord = unitOfWord;
+            this._tagRepository = tagRepository;
+            this._productTagRepository = productTagRepository;
         }
 
         public Product Add(Product product)
         {
-            return _ProductRepository.Add(product);
+            var productNew = _ProductRepository.Add(product);
+            _unitOfWord.Commit();
+            if (!string.IsNullOrEmpty(product.Tags))
+            {
+                string[] tags = product.Tags.Split(',');
+                foreach(string item in tags)
+                {
+                    var tagId = StringHelper.ToUnsignString(item);
+                    if (_tagRepository.Count(x => x.Id == tagId) == 0)
+                    {
+                        Tag tag = new Tag()
+                        {
+                            Id = tagId,
+                            Name = item,
+                            Type = CommonConstant.PRODUCT_TAG
+                        };
+                        _tagRepository.Add(tag);
+                    }
+                    ProductTag productTag = new ProductTag()
+                    {
+                        ProductId = productNew.ID,
+                        TagID = tagId,
+                    };
+                    _productTagRepository.Add(productTag);
+                }
+            }
+            return productNew;
         }
 
         public Product Delete(int id)
@@ -72,6 +103,31 @@ namespace TeduShop.Service
         public void Update(Product product)
         {
             _ProductRepository.Update(product);
+            _productTagRepository.DeleteMulti(x => x.ProductId == product.ID);
+            if (!string.IsNullOrEmpty(product.Tags))
+            {
+                string[] tags = product.Tags.Split(',');
+                foreach (string item in tags)
+                {
+                    var tagId = StringHelper.ToUnsignString(item);
+                    if (_tagRepository.Count(x => x.Id == tagId) == 0)
+                    {
+                        Tag tag = new Tag()
+                        {
+                            Id = tagId,
+                            Name = item,
+                            Type = CommonConstant.PRODUCT_TAG
+                        };
+                        _tagRepository.Add(tag);
+                    }
+                    ProductTag productTag = new ProductTag()
+                    {
+                        ProductId = product.ID,
+                        TagID = tagId,
+                    };
+                    _productTagRepository.Add(productTag);
+                }
+            }
         }
     }
 }

@@ -19,10 +19,10 @@
             <form class="form-horizontal" novalidate name="frmAddProduct" role="form" ng-submit="AddProduct()">
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Tên Danh Mục</label>
+                        <label for="inputEmail3" class="col-sm-2 control-label">Tên Sản Phẩm</label>
                         <div class="col-sm-10">
-                            <input type="text" required class="form-control" name="name" ng-model="product.Name">
-                            <span ng-show="frmAddProduct.name.$error.required" class="text-danger"><b>Phải Nhập Tên Danh Mục</b></span>
+                            <input type="text" required class="form-control" name="name" ng-model="product.Name" ng-change="GetSeoTiltle()">
+                            <span ng-show="frmAddProduct.name.$error.required" class="text-danger"><b>Phải Nhập Tên Sản Phẩm</b></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -77,9 +77,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Mô Tả Ngắn</label>
+                        <label for="inputPassword3" class="col-sm-2 control-label">Mô Tả Sản Phẩm</label>
                         <div class="col-sm-10">
                             <textarea type="text" class="form-control"  ckeditor="ckeditorOptions" name="content" ng-model="product.Content"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Tags</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="tags" ng-model="product.Tags">
                         </div>
                     </div>
                     <div class="form-group">
