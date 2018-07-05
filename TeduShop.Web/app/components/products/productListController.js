@@ -7,7 +7,6 @@
         $scope.products = [];
         $scope.page = 0;
         $scope.pagesCount = 0;
-        $scope.getListProduct = getListProduct;
         $scope.keyword = '';
         $scope.search = search;
         $scope.deleteProduct = deleteProduct;
@@ -103,6 +102,6 @@
             });
         }
 
-        $scope.getListProduct();
+        $scope.search();
     }
 })(angular.module('tedushop.products'));

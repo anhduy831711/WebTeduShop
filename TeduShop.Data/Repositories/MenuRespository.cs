@@ -7,9 +7,9 @@ namespace TeduShop.Data.Respositories
     {
 
     }
-    public class MenuResponsitory : RespositoryBase<Menu>, IMenuRespository
+    public class MenuRespository : RespositoryBase<Menu>, IMenuRespository
     {
-        public MenuResponsitory(IDbFactory dbFactory) : base(dbFactory)
+        public MenuRespository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }
