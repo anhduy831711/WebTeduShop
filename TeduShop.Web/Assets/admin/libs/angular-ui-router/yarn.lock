@@ -6,7 +6,11 @@
 "@types/angular-animate@1.5.9":
 =======
 "@types/angular-animate@^1.5.9":
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.5.9"
   resolved "https://registry.yarnpkg.com/@types/angular-animate/-/angular-animate-1.5.9.tgz#b1df30e85caecd8ed76ab15008aedbc9ee29dee9"
   dependencies:
@@ -52,7 +56,11 @@
 "@types/fs-extra@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-5.0.1.tgz#cd856fbbdd6af2c11f26f8928fd8644c9e9616c9"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     "@types/events" "*"
     "@types/minimatch" "*"
@@ -106,7 +114,11 @@
 "@types/lodash@4.14.104":
   version "4.14.104"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.104.tgz#53ee2357fa2e6e68379341d92eb2ecea4b11bb80"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 "@types/marked@0.0.28":
   version "0.0.28"
@@ -124,7 +136,11 @@
 "@types/minimatch@*", "@types/minimatch@3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 "@types/node@*":
   version "10.0.6"
@@ -134,7 +150,11 @@
 "@types/shelljs@^0.7.0":
 =======
 "@types/shelljs@0.7.8":
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/@types/shelljs/-/shelljs-0.7.8.tgz#4b4d6ee7926e58d7bca448a50ba442fd9f6715bd"
   dependencies:
@@ -157,7 +177,11 @@
 "@uirouter/publish-scripts@^2.3.18":
   version "2.3.18"
   resolved "https://registry.yarnpkg.com/@uirouter/publish-scripts/-/publish-scripts-2.3.18.tgz#a4b6fd07e2fc88153458e2776a56826f915ed469"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     conventional-changelog "^1.1.4"
     conventional-changelog-ui-router-core "^1.4.2"
@@ -169,7 +193,11 @@
 =======
     node-cleanup "^2.1.2"
     npm-run-all "^4.1.3"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     open "^0.0.5"
     readline-sync "^1.4.7"
     shelljs "^0.8.2"
@@ -180,7 +208,11 @@
     typedoc "0.8.0"
 =======
     typedoc "0.11.1"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     typedoc-plugin-external-module-name "1.1.1"
     typedoc-plugin-internal-external "1.0.10"
     typedoc-plugin-ui-router "1.0.6"
@@ -211,7 +243,11 @@ JSONStream@^1.0.3, JSONStream@^1.0.4:
 "@webassemblyjs/helper-buffer@1.4.3":
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-buffer/-/helper-buffer-1.4.3.tgz#0434b55958519bf503697d3824857b1dea80b729"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     debug "^3.1.0"
 
@@ -321,7 +357,11 @@ JSONStream@^1.0.4:
     jsonparse "^1.2.0"
     through ">=2.2.7 <3"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 abbrev@1:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -349,7 +389,11 @@ acorn@^5.2.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
 
 =======
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 addressparser@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/addressparser/-/addressparser-1.0.1.tgz#47afbe1a2a9262191db6838e4fd1d39b40821746"
@@ -410,7 +454,11 @@ amdefine@>=0.0.4:
 ansi-regex@^0.2.0, ansi-regex@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-0.2.1.tgz#0d8e946967a3d8143f93e24e298525fc1b2235f9"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -813,7 +861,11 @@ braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 brorand@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
@@ -950,7 +1002,11 @@ cacache@^10.0.4:
     y18n "^4.0.0"
 
 cache-base@^1.0.1:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cache-base/-/cache-base-1.0.1.tgz#0a7f46416831c8b662ee36fe4e7c59d76f666ab2"
   dependencies:
@@ -1216,7 +1272,11 @@ commander@~2.13.0:
 commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 compare-func@^1.3.1:
   version "1.3.2"
@@ -1378,7 +1438,11 @@ conventional-changelog-ember@^0.3.12:
 conventional-changelog-eslint@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/conventional-changelog-eslint/-/conventional-changelog-eslint-1.0.9.tgz#b13cc7e4b472c819450ede031ff1a75c0e3d07d3"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     q "^1.5.1"
 
@@ -1390,7 +1454,11 @@ conventional-changelog-express@^0.3.0:
 conventional-changelog-express@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/conventional-changelog-express/-/conventional-changelog-express-0.3.6.tgz#4a6295cb11785059fb09202180d0e59c358b9c2c"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     q "^1.5.1"
 
@@ -1424,7 +1492,11 @@ conventional-changelog-jshint@^0.3.8:
 conventional-changelog-preset-loader@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/conventional-changelog-preset-loader/-/conventional-changelog-preset-loader-1.1.8.tgz#40bb0f142cd27d16839ec6c74ee8db418099b373"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 conventional-changelog-ui-router-core@^1.4.2:
   version "1.4.2"
@@ -1460,7 +1532,11 @@ conventional-changelog-writer@^3.0.9:
     lodash "^4.2.1"
     meow "^4.0.0"
     semver "^5.5.0"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     split "^1.0.0"
     through2 "^2.0.0"
 
@@ -1502,7 +1578,11 @@ conventional-commits-filter@^1.1.1:
 conventional-commits-filter@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/conventional-commits-filter/-/conventional-commits-filter-1.1.6.tgz#4389cd8e58fe89750c0b5fb58f1d7f0cc8ad3831"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     is-subset "^0.1.1"
     modify-values "^1.0.0"
@@ -1515,7 +1595,11 @@ conventional-commits-parser@^2.1.0:
 conventional-commits-parser@^2.1.7:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-2.1.7.tgz#eca45ed6140d72ba9722ee4132674d639e644e8e"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     JSONStream "^1.0.4"
     is-text-path "^1.0.0"
@@ -1524,7 +1608,11 @@ conventional-commits-parser@^2.1.7:
     meow "^3.3.0"
 =======
     meow "^4.0.0"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     split2 "^2.0.0"
     through2 "^2.0.0"
     trim-off-newlines "^1.0.0"
@@ -1535,7 +1623,11 @@ convert-source-map@~1.1.0:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.1.3.tgz#4829c877e9fe49b3161f3bf3673888e204699860"
 
 =======
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
@@ -1553,7 +1645,11 @@ copy-concurrently@^1.0.0:
     rimraf "^2.5.4"
     run-queue "^1.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
@@ -1613,7 +1709,11 @@ cross-spawn@^5.0.1:
 cross-spawn@^6.0.4:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     nice-try "^1.0.4"
     path-key "^2.0.1"
@@ -1771,7 +1871,11 @@ define-property@^1.0.0:
 
 defined@^1.0.0:
 =======
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/define-property/-/define-property-1.0.0.tgz#769ebaaf3f4a63aad3af9e8d304c9bbe79bfb0e6"
   dependencies:
@@ -1999,7 +2103,11 @@ errno@~0.1.7:
   dependencies:
     prr "~1.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 error-ex@^1.2.0, error-ex@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
@@ -2013,7 +2121,11 @@ es-abstract@^1.4.3:
 =======
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.11.0.tgz#cce87d518f0496893b1a30cd8461835535480681"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     es-to-primitive "^1.1.1"
     function-bind "^1.1.1"
@@ -2138,7 +2250,11 @@ execa@^0.7.0:
 execa@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-0.8.0.tgz#d8d76bbc1b55217ed190fd6dd49d3c774ecfc8da"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     cross-spawn "^5.0.1"
     get-stream "^3.0.0"
@@ -2197,7 +2313,11 @@ extend-shallow@^2.0.1:
 extend-shallow@^3.0.0:
 =======
 extend-shallow@^3.0.0, extend-shallow@^3.0.2:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-3.0.2.tgz#26a71aaf073b39fb2127172746131c2704028db8"
   dependencies:
@@ -2218,7 +2338,11 @@ extglob@^0.3.1:
 extglob@^2.0.2:
 =======
 extglob@^2.0.2, extglob@^2.0.4:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/extglob/-/extglob-2.0.4.tgz#ad00fe4dc612a9232e8718711dc5cb5ab0285543"
   dependencies:
@@ -2365,7 +2489,11 @@ fork-ts-checker-webpack-plugin@0.3.0:
 fork-ts-checker-webpack-plugin@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-0.4.1.tgz#718801621c50c7f20de9c8e6a68a2db228a4081f"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     babel-code-frame "^6.22.0"
     chalk "^1.1.3"
@@ -2379,7 +2507,11 @@ fork-ts-checker-webpack-plugin@^0.4.1:
 <<<<<<< HEAD
 =======
     tapable "^1.0.0"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     vue-parser "^1.1.5"
 
 form-data@~2.0.0:
@@ -2421,7 +2553,11 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 from@~0:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/from/-/from-0.1.7.tgz#83c60afc58b9c56997007ed1a768b3ab303a44fe"
@@ -2585,7 +2721,11 @@ git-raw-commits@^1.3.0:
 git-raw-commits@^1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-1.3.6.tgz#27c35a32a67777c1ecd412a239a6c19d71b95aff"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     dargs "^4.0.1"
     lodash.template "^4.0.2"
@@ -2608,7 +2748,11 @@ git-semver-tags@^1.2.1, git-semver-tags@^1.3.0:
 git-semver-tags@^1.2.1, git-semver-tags@^1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-1.3.6.tgz#357ea01f7280794fe0927f2806bee6414d2caba5"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     meow "^4.0.0"
     semver "^5.5.0"
@@ -2775,7 +2919,11 @@ has-values@^1.0.0:
 has@^1.0.0, has@^1.0.1:
 =======
 has@^1.0.1:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.1.tgz#8461733f538b0837c9361e39a9ab9e9704dc2f28"
   dependencies:
@@ -3052,7 +3200,11 @@ is-binary-path@^1.0.0:
 is-buffer@^1.1.0, is-buffer@^1.1.5:
 =======
 is-buffer@^1.1.5:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
@@ -3074,7 +3226,11 @@ is-ci@^1.0.10:
   dependencies:
     ci-info "^1.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 is-data-descriptor@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz#0b5ee648388e2c860282e793f1856fec3f301b56"
@@ -3103,7 +3259,11 @@ is-descriptor@^0.1.0:
 is-descriptor@^1.0.0:
 =======
 is-descriptor@^1.0.0, is-descriptor@^1.0.2:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-descriptor/-/is-descriptor-1.0.2.tgz#3b159746a66604b04f8c81524ba365c5f14d86ec"
   dependencies:
@@ -3244,7 +3404,11 @@ is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -3341,7 +3505,11 @@ jasmine-core@3.0.0:
 jasmine-core@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.1.0.tgz#a4785e135d5df65024dfc9224953df585bd2766c"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 js-tokens@^3.0.2:
   version "3.0.2"
@@ -3444,7 +3612,11 @@ karma-mocha-reporter@^2.2.5:
 karma-phantomjs-launcher@1.0.4:
 =======
 karma-phantomjs-launcher@^1.0.4:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/karma-phantomjs-launcher/-/karma-phantomjs-launcher-1.0.4.tgz#d23ca34801bda9863ad318e3bb4bd4062b13acd2"
   dependencies:
@@ -3535,7 +3707,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
 klaw@^1.0.0:
 =======
 klaw@^1.0.0, klaw@^1.3.1:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
   optionalDependencies:
@@ -3680,7 +3856,11 @@ lodash@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
 lodash@^4.0.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.4, lodash@^4.5.0:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3796,7 +3976,11 @@ make-dir@^1.0.0:
   dependencies:
     pify "^3.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 map-cache@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/map-cache/-/map-cache-0.2.2.tgz#c32abd0bd6525d9b051645bb4f26ac5dc98a0dbf"
@@ -3809,7 +3993,11 @@ map-limit@0.0.1:
   dependencies:
     once "~1.3.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
@@ -3836,7 +4024,11 @@ marked@^0.3.5:
 marked@^0.3.17:
   version "0.3.19"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -3951,7 +4143,11 @@ micromatch@^3.1.8:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 miller-rabin@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"
@@ -4041,7 +4237,11 @@ mississippi@^2.0.0:
     stream-each "^1.1.0"
     through2 "^2.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 mixin-deep@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.0.tgz#47a8732ba97799457c8c1eca28f95132d7e8150a"
@@ -4127,7 +4327,11 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -4285,7 +4489,11 @@ npm-run-all@^4.1.3:
     ansi-styles "^3.2.0"
     chalk "^2.1.0"
     cross-spawn "^6.0.4"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     memorystream "^0.3.1"
     minimatch "^3.0.4"
     ps-tree "^1.1.0"
@@ -4379,7 +4587,11 @@ once@~1.3.0:
   dependencies:
     wrappy "1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 open@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/open/-/open-0.0.5.tgz#42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc"
@@ -4557,7 +4769,11 @@ pascalcase@^0.1.1:
 path-browserify@0.0.0, path-browserify@~0.0.0:
 =======
 path-browserify@0.0.0:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-0.0.0.tgz#a0b870729aae214005b7d5032ec2cbbb0fb4451a"
 
@@ -4703,7 +4919,11 @@ pkgresolve@^1.1.4:
   dependencies:
     minimist "~1.2.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -4826,7 +5046,11 @@ punycode@1.4.1, punycode@^1.2.4, punycode@^1.4.1:
 q@^1.4.1:
 =======
 q@^1.4.1, q@^1.5.1:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
@@ -4968,7 +5192,11 @@ read-pkg@^3.0.0:
     string_decoder "~1.0.3"
     util-deprecate "~1.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 readable-stream@1.1.x:
   version "1.1.14"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
@@ -5015,7 +5243,11 @@ readable-stream@^2.1.5:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 readdirp@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-2.1.0.tgz#4ed0ad060df3073300c48440373f72d1cc642d78"
@@ -5256,7 +5488,11 @@ resolve@1.1.7:
 resolve@^1.1.3, resolve@^1.1.4, resolve@^1.1.6, resolve@^1.3.2, resolve@^1.5.0:
 =======
 resolve@^1.1.6, resolve@^1.3.2, resolve@^1.5.0:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
@@ -5307,7 +5543,11 @@ rollup-plugin-node-resolve@^3.3.0:
     resolve "^1.1.6"
 
 rollup-plugin-sourcemaps@^0.4.2:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/rollup-plugin-sourcemaps/-/rollup-plugin-sourcemaps-0.4.2.tgz#62125aa94087aadf7b83ef4dfaf629b473135e87"
   dependencies:
@@ -5318,7 +5558,11 @@ rollup-plugin-sourcemaps@^0.4.2:
 rollup-plugin-uglify@3.0.0:
 =======
 rollup-plugin-uglify@^3.0.0:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-uglify/-/rollup-plugin-uglify-3.0.0.tgz#a34eca24617709c6bf1778e9653baafa06099b86"
   dependencies:
@@ -5348,7 +5592,11 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   resolved "https://registry.yarnpkg.com/run-queue/-/run-queue-1.0.3.tgz#e848396f057d223f24386924618e25694161ec47"
   dependencies:
     aproba "^1.1.1"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1:
   version "5.1.1"
@@ -5369,7 +5617,11 @@ schema-utils@^0.4.4, schema-utils@^0.4.5:
     ajv-keywords "^3.1.0"
 
 "semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.5.0:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
@@ -5463,7 +5715,11 @@ shelljs@0.8.1:
 shelljs@^0.7.0, shelljs@^0.7.3, shelljs@^0.7.8:
 =======
 shelljs@^0.7.3:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.8.tgz#decbcf874b0d1e5fb72e14b164a9683048e9acb3"
   dependencies:
@@ -5645,7 +5901,11 @@ source-map@^0.4.4:
 source-map@^0.5.3, source-map@^0.5.6:
 =======
 source-map@^0.5.6:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -5735,7 +5995,11 @@ ssri@^5.2.4:
   dependencies:
     safe-buffer "^5.1.1"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -5802,7 +6066,11 @@ string-width@^1.0.1, string-width@^1.0.2:
 string-width@^2.0.0:
 =======
 string-width@^2.0.0, string-width@^2.1.1:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
   dependencies:
@@ -6034,7 +6302,11 @@ ts-loader@3.5.0:
 ts-loader@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-4.3.0.tgz#4e3ba172783d1256d3a23bdfadde011a795fae9e"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
@@ -6058,7 +6330,11 @@ tslint-eslint-rules@4.1.1:
 tslint-eslint-rules@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/tslint-eslint-rules/-/tslint-eslint-rules-5.2.0.tgz#3e767e7e9cc7877497a2bde5bcb6184dee9b28c4"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     doctrine "0.7.2"
     tslib "1.9.0"
@@ -6072,7 +6348,11 @@ tslint@5.9.1:
 tslint@^5.10.0:
   version "5.10.0"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.10.0.tgz#11e26bccb88afa02dd0d9956cae3d4540b5f54c3"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     babel-code-frame "^6.22.0"
     builtin-modules "^1.1.1"
@@ -6187,7 +6467,11 @@ typedoc@0.11.1:
     "@types/minimatch" "3.0.3"
     "@types/shelljs" "0.7.8"
     fs-extra "^5.0.0"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     handlebars "^4.0.6"
     highlight.js "^9.0.0"
     lodash "^4.17.5"
@@ -6214,7 +6498,11 @@ typescript@^2.8.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.3.tgz#5d817f9b6f31bb871835f4edf0089f21abe6c170"
 
 uglify-es@^3.3.4, uglify-es@^3.3.7:
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
   dependencies:
@@ -6286,7 +6574,11 @@ unique-slug@^2.0.0:
   dependencies:
     imurmurhash "^0.1.4"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 universalify@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
@@ -6308,7 +6600,11 @@ upath@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.0.4.tgz#ee2321ba0a786c50973db043a50b7bcba822361d"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
@@ -6346,7 +6642,11 @@ user-home@^2.0.0:
 useragent@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/useragent/-/useragent-2.2.1.tgz#cf593ef4f2d175875e8bb658ea92e18a4fd06d8e"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     lru-cache "2.2.x"
     tmp "0.0.x"
@@ -6407,7 +6707,11 @@ watchpack@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.4.0.tgz#4a1472bcbb952bd0a9bb4036801f954dfb39faac"
 =======
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     parse5 "^3.0.3"
 
@@ -6478,7 +6782,11 @@ webpack-sources@^1.1.0:
 webpack@^4.8.3:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.8.3.tgz#957c8e80000f9e5cc03d775e78b472d8954f4eeb"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
   dependencies:
     "@webassemblyjs/ast" "1.4.3"
     "@webassemblyjs/wasm-edit" "1.4.3"
@@ -6501,7 +6809,11 @@ webpack@^4.8.3:
     chrome-trace-event "^0.1.1"
     enhanced-resolve "^4.0.0"
     eslint-scope "^3.7.1"
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
     loader-runner "^2.3.0"
     loader-utils "^1.1.0"
     memory-fs "~0.4.1"
@@ -6679,7 +6991,11 @@ yargs@^7.1.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 yargs@^8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-8.0.2.tgz#6299a9055b1cefc969ff7e79c1d918dceb22c360"

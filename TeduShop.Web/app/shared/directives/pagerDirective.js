@@ -53,6 +53,4 @@
             ]
         }
     }
-}
-
-)(angular.module('tedushop.common'))
+})(angular.module('tedushop.common'))

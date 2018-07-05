@@ -5,7 +5,7 @@
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang Chủ</a></li>
         <li><a href="#">Sản Phẩm</a></li>
-        <li><a ui-sref="product_categories">Danh Sách</a></li>
+        <li><a ui-sref="product_categories">Danh Sách Danh Mục</a></li>
         <li class="active">Thêm Mới</li>
     </ol>
 </section>
@@ -21,13 +21,15 @@
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Tên Danh Mục</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" name="name" ng-model="productCategory.Name">
+                            <input type="text"  required class="form-control" name="name" ng-model="productCategory.Name">
+                            <span ng-show="frmAddProductCategory.name.$error.required" class="text-danger"><b>Phải Nhập Tên Danh Mục</b></span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Tiêu Đề SEO</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="alias" ng-model="productCategory.Alias">
+                            <input type="text" required class="form-control" name="alias" ng-model="productCategory.Alias">
+                            <span ng-show="frmAddProductCategory.alias.$invalid">Phải Nhập Tiêu Đề SEO</span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -84,7 +86,7 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-success" style="float:right">Lưu</button>
+                    <button type="submit" class="btn btn-success" style="float:right" ng-disabled="frmAddProductCategory.$invalid">Lưu</button>
                     <button ui-sref="product_categories" class="btn btn-default" style="float:left">Hủy</button>
                 </div>
                 <!-- /.card-footer -->

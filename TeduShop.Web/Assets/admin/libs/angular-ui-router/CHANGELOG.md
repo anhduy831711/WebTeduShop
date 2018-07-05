@@ -36,7 +36,11 @@
 * **transition:** Fix typing of Transition.params() ([ebea30e](https://github.com/ui-router/core/commit/ebea30e))
 * **transition:** Normalize `error()` to always return `Rejection` ([9bcc5db](https://github.com/ui-router/core/commit/9bcc5db))
 
+<<<<<<< HEAD
 >>>>>>> origin/Bai24
+=======
+>>>>>>> Bai24
+>>>>>>> origin/Bai34a
 ## 1.0.15 (2018-02-12)
 [Compare `@uirouter/angularjs` versions 1.0.14 and 1.0.15](https://github.com/angular-ui/ui-router/compare/1.0.14...1.0.15)
 

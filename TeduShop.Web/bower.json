@@ -4,9 +4,12 @@
   "dependencies": {
     "angular": "*",
     "angular-ui-router": "*",
+    "bootbox": "*",
     "bootstrap": "*",
     "fastclick": "*",
+    "ngBootbox": "*",
     "slimscroll": "*",
-    "toastr": "*"
+    "toastr": "*",
+    "ckeditor": "*"
   }
 }

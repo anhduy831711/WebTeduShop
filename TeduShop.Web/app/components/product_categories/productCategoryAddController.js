@@ -6,11 +6,9 @@
         $scope.productCategory = {
             CreatedDate: new Date(),
             Status: true,
-            Name: 'Danh Mục 1',
-            Alias:'danh-muc-1'
         }
         $scope.AddProductCategory = AddProductCategory;
-
+        $scope.regularName = /^\w{3,10}$/;
         function AddProductCategory()
         {
             apiService.post('api/productcategory/create', $scope.productCategory, function (result) {
@@ -21,13 +19,13 @@
             })
         }
 
-        function LoadProductCategories() {
+        function LoadParentCategories() {
             apiService.get("api/productcategory/getallparent", null, function (result) {
                 $scope.parentcategories = result.data;
             }, function () {
                 cosole.log('Cannot get list parents');
             })
         }
-        LoadProductCategories();
+        LoadParentCategories();
     }
 })(angular.module('tedushop.product_categories'));
