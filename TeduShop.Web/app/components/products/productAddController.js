@@ -13,6 +13,17 @@
             height: '200px'
         };
 
+        $scope.ChooseImage = function()
+        {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl)
+            {
+                $scope.product.Image = fileUrl;
+                console.log(fileUrl);
+            }
+            finder.popup();
+        }
+
         function AddProduct() {
             apiService.post('api/productcategory/create', $scope.product, function (result) {
                 notificationService.displaySuccess(result.data.Name + ' Đã Được Thêm Mới');
