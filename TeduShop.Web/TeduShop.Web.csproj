@@ -5474,22 +5474,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Content Include="Assets\admin\libs\angular\.bower.json" />
-    <Content Include="Assets\admin\libs\angular\angular.min.js.gzip" />
-    <Content Include="Assets\admin\libs\angular\angular.min.js.map" />
-    <Content Include="Assets\admin\libs\angular\bower.json" />
-    <Content Include="Assets\admin\libs\angular\LICENSE.md" />
-    <Content Include="Assets\admin\libs\angular\package.json" />
-    <Content Include="Assets\admin\libs\angular\README.md" />
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
->>>>>>> origin/Bai24
-=======
->>>>>>> Bai24
->>>>>>> origin/Bai34a
     <Content Include="Assets\admin\css\adminlte.css.map" />
     <Content Include="Assets\admin\css\adminlte.min.css.map" />
   </ItemGroup>
@@ -5686,26 +5670,10 @@
     <Content Include="Assets\admin\libs\angular-ui-router\ISSUE_TEMPLATE.md" />
     <Content Include="Assets\admin\libs\angular-ui-router\LICENSE" />
     <Content Include="Assets\admin\libs\angular-ui-router\README.md" />
-<<<<<<< HEAD
-=======
-    <Content Include="Assets\admin\libs\angular-ui-router\release\angular-ui-router.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\angular-ui-router.min.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\resolveService.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\resolveService.min.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\stateEvents.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\stateEvents.min.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\ui-router-angularjs.js.map" />
-    <Content Include="Assets\admin\libs\angular-ui-router\release\ui-router-angularjs.min.js.map" />
-<<<<<<< HEAD
->>>>>>> origin/Bai24
-=======
->>>>>>> Bai24
->>>>>>> origin/Bai34a
     <Content Include="Assets\admin\libs\angular-ui-router\tslint.json" />
     <Content Include="Assets\admin\libs\angular-ui-router\typedoc.json" />
     <Content Include="Assets\admin\libs\angular-ui-router\yarn.lock" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Content Include="Assets\admin\libs\toastr\.bower.json" />
     <Content Include="Assets\admin\libs\toastr\bower.json" />
@@ -5724,10 +5692,6 @@
     <Content Include="Assets\admin\libs\angular\package.json" />
     <Content Include="Assets\admin\libs\angular\README.md" />
   </ItemGroup>
-<<<<<<< HEAD
-=======
->>>>>>> origin/Bai24
-=======
   <ItemGroup>
     <Content Include="Assets\admin\libs\bootbox.js\.bower.json" />
     <Content Include="Assets\admin\libs\bootbox.js\.jshintrc" />
@@ -5813,9 +5777,6 @@
     <Content Include="Assets\admin\libs\ckfinder\skins\bootstrap\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Assets\admin\libs\ckfinder\skins\bootstrap\assets\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
-=======
->>>>>>> Bai24
->>>>>>> origin/Bai34a
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
