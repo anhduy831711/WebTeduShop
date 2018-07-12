@@ -9,12 +9,21 @@
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
     function config($stateProvider, $urlRouterProvider) {
-        $stateProvider.state('home', {
-            url: "/admin",
+        $stateProvider.state('base', {
+            url: '',
+            templateUrl: '/app/shared/View/baseView.html',
+            abstract: true
+        }).state('login', {
+            url: '/login',
+            templateUrl: "/app/components/login/loginView.html",
+            controller: "loginController"
+        }).state('home', {
+            url: '/admin',
+            parent: 'base',
             templateUrl: "/app/components/home/HomeView.html",
             controller: "HomeController"
-        })
+        });
 
-        $urlRouterProvider.otherwise('/admin');
+        $urlRouterProvider.otherwise('/login');
     }
 })();
