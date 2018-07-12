@@ -18,8 +18,9 @@
             var finder = new CKFinder();
             finder.selectActionFunction = function (fileUrl)
             {
-                $scope.product.Image = fileUrl;
-                console.log(fileUrl);
+                $scope.$apply(function () {
+                    $scope.product.Image = fileUrl;
+                })
             }
             finder.popup();
         }
@@ -29,6 +30,7 @@
             $scope.product.Alias = commonService.getSeoTitle($scope.product.Name);
         }
         function AddProduct() {
+            $scope.product.MoreImages = JSON.stringify($scope.moreImages);
             apiService.post('api/product/create', $scope.product, function (result) {
                 notificationService.displaySuccess(result.data.Name + ' Đã Được Thêm Mới');
                 $state.go('products');
@@ -43,6 +45,19 @@
             }, function () {
                 notificationService.displayError('Đọc Danh Sách Danh Mục Không Thành Công');
             })
+        }
+
+        $scope.moreImages = [];
+        $scope.ChooseMoreImage = function ()
+        {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                $scope.$apply(function () {
+                    $scope.moreImages.push(fileUrl);
+                })
+                //console.log(fileUrl);
+            }
+            finder.popup();
         }
         LoadProductCategories();
     }
