@@ -10,6 +10,7 @@
     "ngBootbox": "*",
     "slimscroll": "*",
     "toastr": "*",
-    "ckeditor": "*"
+    "ckeditor": "*",
+    "angular-local-storage": "*"
   }
 }
