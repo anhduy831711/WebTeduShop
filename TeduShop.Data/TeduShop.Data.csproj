@@ -88,6 +88,10 @@
     <Compile Include="Migrations\201807051640506_addTagsView.Designer.cs">
       <DependentUpon>201807051640506_addTagsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808110912333_updateSlide.cs" />
+    <Compile Include="Migrations\201808110912333_updateSlide.Designer.cs">
+      <DependentUpon>201808110912333_updateSlide.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ApplicationUserRepository.cs" />
@@ -141,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807051640506_addTagsView.resx">
       <DependentUpon>201807051640506_addTagsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808110912333_updateSlide.resx">
+      <DependentUpon>201808110912333_updateSlide.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

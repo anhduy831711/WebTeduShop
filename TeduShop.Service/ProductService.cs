@@ -25,6 +25,10 @@ namespace TeduShop.Service
         Product GetById(int id);
 
         void Save();
+
+        IEnumerable<Product> GetLastProduct(int top);
+
+        IEnumerable<Product> GetHotProduct(int top);
     }
     public class ProductService : IProductService
     {
@@ -128,6 +132,16 @@ namespace TeduShop.Service
                     _productTagRepository.Add(productTag);
                 }
             }
+        }
+
+        public IEnumerable<Product> GetLastProduct(int top)
+        {
+            return _ProductRepository.GetMulti(x => x.Status).OrderByDescending(x=>x.CreatedDate).Take(top);
+        }
+
+        public IEnumerable<Product> GetHotProduct(int top)
+        {
+            return _ProductRepository.GetMulti(x => x.Status && x.HotFlag ==true).OrderByDescending(x => x.CreatedDate).Take(top);
         }
     }
 }

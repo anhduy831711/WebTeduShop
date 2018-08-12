@@ -24,7 +24,9 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
             //CreateUserLogin(context);
-           
+            CreateSlide(context);
+
+
         }
         public void CreateUserLogin(TeduShopDbContext context)
         {
@@ -67,7 +69,35 @@
                 context.ProductCategorys.AddRange(listProductCategory);
                 context.SaveChanges();
             }
+        }
 
+        private void CreateSlide(TeduShop.Data.TeduShopDbContext context)
+        {
+            if(context.Slides.Count() == 0)
+            {
+                List<Slide> listSide = new List<Slide>()
+                {
+                    new Slide() {   DisplayOrder=0,
+                                    Name ="Slide 1",
+                                    Image ="/Assets/client/images/bag.jpg",
+                                    Status =true,
+                                    URL ="#",
+                                    Description =@"<h2>FLAT 50% 0FF</h2>
+                                <label>FOR ALL PURCHASE <b>VALUE</b></label>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </ p >
+                                <span class='on-get'>GET NOW</span>"},
+                    new Slide() {   DisplayOrder=0,
+                                    Name ="Slide 2",
+                                    Image ="/Assets/client/images/bag1.jpg",
+                                    Status =true,URL="#",
+                                    Description =@"<h2>FLAT 50% 0FF</h2>
+                                <label>FOR ALL PURCHASE <b>VALUE</b></label>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+                                <span class='on-get'>GET NOW</span>"}
+                };
+                context.Slides.AddRange(listSide);
+                context.SaveChanges();
+            }
         }
     }
 }
