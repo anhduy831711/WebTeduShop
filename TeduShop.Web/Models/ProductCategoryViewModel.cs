@@ -33,7 +33,7 @@ namespace TeduShop.Web.Models
         public DateTime? UpdateDate { set; get; }
 
         public string UpdateBy { set; get; }
-        [Required(ErrorMessage ="Meta KeyWord Bắt Buộc Nhập")]
+
         public string MetaKeyWord { set; get; }
 
         public string MetaDescription { set; get; }

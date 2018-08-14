@@ -21,7 +21,8 @@
                 notificationService.displaySuccess(result.data.Name + ' Đã Được Thêm Mới');
                 $state.go('product_categories');
             }, function (error) {
-                notificationService.displayError('Thêm Mới Không Thành Công');
+                console.log(error);
+                notificationService.displayError("Thêm Mới Không Thành Công");
             })
         }
 

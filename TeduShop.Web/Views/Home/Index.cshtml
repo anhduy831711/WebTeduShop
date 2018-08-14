@@ -22,7 +22,7 @@
                         <article style="position: absolute; width: 100%; opacity: 0;">
                             <div class="banner-matter">
                                 <div class="col-md-5 banner-bag">
-                                    <img class="img-responsive " src="@slide.Image" alt="" />
+                                    <img class="img-responsive " src="@slide.Image" alt=""/>
                                 </div>
                                 <div class="col-md-7 banner-off">
                                     @Html.Raw(slide.Description)
@@ -75,9 +75,9 @@
         @foreach (var lastProduct in Model.LastestProducts)
         {
             var url = "/" + lastProduct.Alias + ".p-" + lastProduct.ID + ".html";
-            <div class="col-md-4 chain-grid grid-top-chain">
+            <div class="col-md-4 chain-grid grid-top-chain" style="margin-right:20px">
                 <a href="@url"></a>
-                <img class="img-responsive chain" src="@lastProduct.Image" alt="@lastProduct.Name" />
+                <img class="img-responsive chain" src="@lastProduct.Image" alt="@lastProduct.Name" style="height:250px" />
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
                     <h6><a href="@url">@lastProduct.Name</a></h6>
@@ -123,9 +123,9 @@
         @foreach (var hotProduct in Model.HotProducts)
         {
             var url = "/" + hotProduct.Alias + ".p-" + hotProduct.ID + ".html";
-            <div class="col-md-4 chain-grid grid-top-chain">
+            <div class="col-md-4 chain-grid grid-top-chain" style="margin-right:20px">
                 <a href="@url"></a>
-                <img class="img-responsive chain" src="@hotProduct.Image" alt="@hotProduct.Name" />
+                <img class="img-responsive chain" src="@hotProduct.Image" alt="@hotProduct.Name" style="height:250px" />
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
                     <h6><a href="@url">Lorem ipsum dolor</a></h6>
